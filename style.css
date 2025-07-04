@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.navbar {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-items ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-items ul li {
+    margin: 0 15px;
+}
+
+.navbar-items ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.burger {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.background {
+    background: url('background.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.text-box {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.box {
+    flex: 1;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.Services, .quality, .About, .Department {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box1, .box2, .box3 {
+    background: #f4f4f4;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1 1 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.box1 i, .box2 i {
+    font-size: 40px;
+    color: #2196f3;
+}
+
+.heading {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #333;
+}
+
+.footer-sec {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sec {
+    flex: 1;
+    padding: 10px;
+}
+
+.para {
+    text-align: center;
+    margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .text-box {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .navbar-items ul {
+        flex-direction: column;
+        display: none;
+    }
+
+    .navbar-items.active ul {
+        display: flex;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+}
